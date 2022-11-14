@@ -120,6 +120,22 @@ ul.grid {
     background-color: #333;
 }
 
+.our-work .grid li.small {
+    flex-basis: 40%;
+}
+
+.our-work .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 900px) {
+    .our-work .grid li.small,
+    .our-work .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+
 /* Services Section*/
 
 .services {
@@ -148,6 +164,22 @@ ul.grid {
     margin: 0;
 }
 
+@media (max-width: 900px){
+    .services .grid li {
+        flex-basis: 70%;
+        margin-bottom: 65px;
+    }
+    .services .grid li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .services .grid li {
+        flex-basis: 100%;
+    }
+}
+
 
 /* Reviews Section*/
 
@@ -168,6 +200,16 @@ ul.grid {
 .reviews .author {
     font-size: 15px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 900px){
+    .reviews .quote {
+        font-size: 18px;
+    }
+    .reviews .author {
+        font-size: 10px;
+    }
+
 }
 
 /* Contact Section */
@@ -196,5 +238,10 @@ ul.grid {
     padding: 18px 42px;
 }
 
-
+@media (max-width: 800px) {
+    .contact form input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}
 
